@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="CERT_2_DB_R-W_AppPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>org.kephis.cms.entities.ECertRoles</class>
+    <class>org.kephis.cms.entities.ECertUsers</class>
+    <class>org.kephis.cms.entities.ECertificate</class>
+    <class>org.kephis.cms.entities.ECertificateList</class>
+    <class>org.kephis.cms.entities.ECertificateHistory</class>
+    <class>org.kephis.cms.entities.EPhytoDetails</class>
+    <class>org.kephis.cms.entities.ECertificateDetails</class>
+    <properties>
+     <property name="eclipselink.logging.level" value="OFF"/>
+     <property name="eclipselink.logging.parameters" value="off"/> 
+      <!--  Optimization #9 - statement caching -->
+      <property name="eclipselink.jdbc.cache-statements" value="true"/>
+      <!--  Optimization #10 - batch writing -->
+      <property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+      <property name="eclipselink.jdbc.batch-writing.size" value="1000"/>
+      <!--  Optimization #11 - disable caching for batch insert (caching only improves reads, so only adds overhead for inserts) -->
+      <property name="eclipselink.cache.shared.default" value="false"/>
+      <!--  Except for Customer which is shared by orders -->
+      <property name="eclipselink.cache.shared.ECertificateHistory" value="true"/>
+      <!--  Optimization #12 - turn logging off -->
+      <!-- property name="eclipselink.logging.level" value="FINE" /-->
+      <!-- <property name="eclipselink.logging.level" value="off"/>-->
+      <!--  Optimization #13 - close EntityManager on commit, to avoid cost of resume -->
+      <property name="eclipselink.persistence-context.close-on-commit" value="true"/>
+      <!--  Optimization #14 - avoid auto flush cost on query execution -->
+      <property name="eclipselink.persistence-context.flush-mode" value="commit"/>
+      <!--  Optimization #15 - avoid cost of persist on commit -->
+      <property name="eclipselink.persistence-context.persist-on-commit" value="false"/>
+    <property name="javax.persistence.jdbc.url" value="jdbc:mysql://x.x.x.x:3306/db?zeroDateTimeBehavior=convertToNull"/> 
+     <property name="javax.persistence.jdbc.user" value="root"/> 
+         <!-- <property name="javax.persistence.jdbc.password" value="root"/>-->
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+     <!-- <property name="javax.persistence.jdbc.user" value="?????"/> -->
+     <property name="javax.persistence.jdbc.password" value="????"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>

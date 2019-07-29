@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_22-b04 (Sun Microsystems Inc.)
+Class-Path: lib/eclipselink-2.2.0.jar lib/eclipselink-javax.persistenc
+ e-2.0.jar lib/mysql-connector-java-5.1.13-bin.jar lib/adss_certificat
+ ion.jar lib/adss_client_api.jar lib/adss_common.jar lib/adss_crlmanag
+ er.jar lib/adss_database.jar lib/adss_encryption.jar lib/adss_gateway
+ .jar lib/adss_ltans.jar lib/adss_ocsp.jar lib/adss_protocol_certifica
+ tion_cmc.jar lib/adss_protocol_certification_xml.jar lib/adss_protoco
+ l_common.jar lib/adss_protocol_dss.jar lib/adss_protocol_dssx.jar lib
+ /adss_protocol_encryption.jar lib/adss_protocol_ltan.jar lib/adss_pro
+ tocol_scvp.jar lib/adss_protocol_signing_xml.jar lib/adss_protocol_ve
+ rification_xml.jar lib/adss_protocol_xkms.jar lib/adss_scvp.jar lib/a
+ dss_service_common.jar lib/adss_signing.jar lib/adss_tsa.jar lib/adss
+ _verification.jar lib/adss_xkms.jar lib/antlr-2.7.5H3.jar lib/asc_cer
+ tificate.jar lib/asc_cms.jar lib/asc_email.jar lib/asc_ldap.jar lib/a
+ sc_license.jar lib/asc_logging.jar lib/asc_multipart.jar lib/asc_pdf.
+ jar lib/asc_pkcs11.jar lib/asc_secure.jar lib/asc_soap.jar lib/asc_tr
+ ansporter.jar lib/asc_util.jar lib/asc_wrapperapi.jar lib/asc_xmldigs
+ ig.jar lib/asc_xmlsec.jar lib/asm-attrs.jar lib/asm.jar lib/bcmail-jd
+ k15-142.jar lib/bcprov-jdk15-142.jar lib/bctsp-jdk15-142.jar lib/cgli
+ b-nodep-2.2.jar lib/commons-codec-1.3.jar lib/commons-collections-2.1
+ .1.jar lib/commons-dbcp-1.2.1.jar lib/commons-httpclient-3.0.jar lib/
+ commons-lang.jar lib/commons-logging-1.0.4.jar lib/commons-logging.ja
+ r lib/commons-net-2.0.jar lib/commons-net-ftp-2.0.jar lib/commons-poo
+ l-1.2.jar lib/dom4j-1.5.2.jar lib/ehcache-1.1.jar lib/hibernate3.jar 
+ lib/iaik_cms.jar lib/iaik_ecc.jar lib/iaik_jce.jar lib/iaik_ssl.jar l
+ ib/iaik_tsp.jar lib/iaik_xades.jar lib/iaik_xsect.jar lib/iaikPkcs11P
+ rovider.jar lib/iaikPkcs11Wrapper.jar lib/iText.jar lib/jdom.jar lib/
+ jta.jar lib/jtds-1.2.2.jar lib/ldapjdk.jar lib/log4j-1.2.12.jar lib/l
+ og4j-1.2.9.jar lib/mail.jar lib/not-yet-commons-ssl-0.3.10.jar lib/oj
+ dbc14.jar lib/postgresql-8.2-506.jdbc3.jar lib/SNMP4J.jar lib/tfca_co
+ nnector.jar lib/w3c_http.jar lib/xalan.jar lib/xercesImpl.jar lib/xml
+ sec-1.4.0.jar
+X-COMMENT: Main-Class will be added automatically by build
+Main-Class: mainui.ServicesUi
+SplashScreen-Image: META-INF/tmk-logo.png
+

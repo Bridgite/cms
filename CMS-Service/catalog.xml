@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/cms/CMS-Service/../../home/kim/projects/CMS-Service/UnSignedPhytos/SPSCertificate_8p0.xsd" uri="xml-resources/jaxb/SPSCertificate_8p0/SPSCertificate_8p0.xsd"/>
+    <system systemId="file:/home/kim/projects/CMS-Service/UnSignedPhytos/xsi.xsd" uri="xml-resources/jaxb/SPSCertificate_8p0/xsi.xsd"/>
+    <system systemId="file:/home/kim/projects/CMS-Service/UnSignedPhytos/rsm.xsd" uri="xml-resources/jaxb/SPSCertificate_8p0/rsm.xsd"/>
+</catalog>
